@@ -13,22 +13,26 @@
         </header>
         <nav class="nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="game.html">Game</a></li>
-                <li><a href="stats.html">Stats</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="game.html" class="nav-link">Start Game</a></li>
+                <li><a href="stats.html" class="nav-link">Your Progress</a></li>
             </ul>
         </nav>
         <main class="main-content">
             <section class="stats-area">
                 <h2>Game Stats</h2>
-                <p>Questions Answered: 0</p>
-                <p>Correct Answers: 0</p>
-                <p>Accuracy: 0%</p>
+                <p>Questions Answered: <span id="questionsAnswered">0</span></p>
+                <p>Correct Answers: <span id="correctAnswers">0</span></p>
+                <p>Accuracy: <span id="accuracy">0%</span></p>
             </section>
         </main>
         <footer class="footer">
             <p>&copy; 2024 French Learning Game. All rights reserved.</p>
         </footer>
     </div>
+    <script>
+        // Logic for displaying user stats can be added here
+        // You can store and update stats using localStorage or other methods
+    </script>
 </body>
 </html>
