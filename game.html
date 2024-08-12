@@ -13,17 +13,17 @@
         </header>
         <nav class="nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="game.html">Game</a></li>
-                <li><a href="stats.html">Stats</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="game.html" class="nav-link">Start Game</a></li>
+                <li><a href="stats.html" class="nav-link">Your Progress</a></li>
             </ul>
         </nav>
         <main class="main-content">
             <section class="game-area">
                 <h2>Passé Composé Practice</h2>
-                <p id="question">Translate: "I have eaten"</p>
+                <p id="question"></p>
                 <input type="text" id="answer" placeholder="Type your answer here...">
-                <button onclick="checkAnswer()">Submit</button>
+                <button class="submit-btn" onclick="submitAnswer()">Submit</button>
                 <p id="feedback"></p>
             </section>
         </main>
@@ -31,6 +31,6 @@
             <p>&copy; 2024 French Learning Game. All rights reserved.</p>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" onload="startGame()"></script>
 </body>
 </html>
